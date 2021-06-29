@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24F3CA64268BDD2C009CD8FD /* NoteDictate WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 24F3CA63268BDD2C009CD8FD /* NoteDictate WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		24F3CA69268BDD39009CD8FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24F3CA68268BDD39009CD8FD /* Assets.xcassets */; };
+		24F3CA70268BDD39009CD8FD /* NoteDictate WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 24F3CA6F268BDD39009CD8FD /* NoteDictate WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		24F3CA75268BDD3A009CD8FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F3CA74268BDD3A009CD8FD /* ContentView.swift */; };
+		24F3CA77268BDD3A009CD8FD /* NoteDictateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F3CA76268BDD3A009CD8FD /* NoteDictateApp.swift */; };
+		24F3CA79268BDD3A009CD8FD /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F3CA78268BDD3A009CD8FD /* ComplicationController.swift */; };
+		24F3CA7B268BDD3B009CD8FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24F3CA7A268BDD3B009CD8FD /* Assets.xcassets */; };
+		24F3CA7E268BDD3B009CD8FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24F3CA7D268BDD3B009CD8FD /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24F3CA65268BDD2C009CD8FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24F3CA59268BDD2B009CD8FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24F3CA62268BDD2C009CD8FD;
+			remoteInfo = "NoteDictate WatchKit App";
+		};
+		24F3CA71268BDD39009CD8FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24F3CA59268BDD2B009CD8FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24F3CA6E268BDD39009CD8FD;
+			remoteInfo = "NoteDictate WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		24F3CA85268BDD3B009CD8FD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				24F3CA70268BDD39009CD8FD /* NoteDictate WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24F3CA89268BDD3B009CD8FD /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				24F3CA64268BDD2C009CD8FD /* NoteDictate WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		24F3CA5F268BDD2B009CD8FD /* NoteDictate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteDictate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24F3CA63268BDD2C009CD8FD /* NoteDictate WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NoteDictate WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24F3CA68268BDD39009CD8FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24F3CA6A268BDD39009CD8FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24F3CA6F268BDD39009CD8FD /* NoteDictate WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "NoteDictate WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24F3CA74268BDD3A009CD8FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		24F3CA76268BDD3A009CD8FD /* NoteDictateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDictateApp.swift; sourceTree = "<group>"; };
+		24F3CA78268BDD3A009CD8FD /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		24F3CA7A268BDD3B009CD8FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24F3CA7D268BDD3B009CD8FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		24F3CA7F268BDD3B009CD8FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24F3CA6C268BDD39009CD8FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24F3CA58268BDD2B009CD8FD = {
+			isa = PBXGroup;
+			children = (
+				24F3CA67268BDD2C009CD8FD /* NoteDictate WatchKit App */,
+				24F3CA73268BDD39009CD8FD /* NoteDictate WatchKit Extension */,
+				24F3CA60268BDD2B009CD8FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		24F3CA60268BDD2B009CD8FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24F3CA5F268BDD2B009CD8FD /* NoteDictate.app */,
+				24F3CA63268BDD2C009CD8FD /* NoteDictate WatchKit App.app */,
+				24F3CA6F268BDD39009CD8FD /* NoteDictate WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24F3CA67268BDD2C009CD8FD /* NoteDictate WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				24F3CA68268BDD39009CD8FD /* Assets.xcassets */,
+				24F3CA6A268BDD39009CD8FD /* Info.plist */,
+			);
+			path = "NoteDictate WatchKit App";
+			sourceTree = "<group>";
+		};
+		24F3CA73268BDD39009CD8FD /* NoteDictate WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				24F3CA74268BDD3A009CD8FD /* ContentView.swift */,
+				24F3CA76268BDD3A009CD8FD /* NoteDictateApp.swift */,
+				24F3CA78268BDD3A009CD8FD /* ComplicationController.swift */,
+				24F3CA7A268BDD3B009CD8FD /* Assets.xcassets */,
+				24F3CA7F268BDD3B009CD8FD /* Info.plist */,
+				24F3CA7C268BDD3B009CD8FD /* Preview Content */,
+			);
+			path = "NoteDictate WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		24F3CA7C268BDD3B009CD8FD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				24F3CA7D268BDD3B009CD8FD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24F3CA5E268BDD2B009CD8FD /* NoteDictate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24F3CA8A268BDD3B009CD8FD /* Build configuration list for PBXNativeTarget "NoteDictate" */;
+			buildPhases = (
+				24F3CA5D268BDD2B009CD8FD /* Resources */,
+				24F3CA89268BDD3B009CD8FD /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24F3CA66268BDD2C009CD8FD /* PBXTargetDependency */,
+			);
+			name = NoteDictate;
+			productName = NoteDictate;
+			productReference = 24F3CA5F268BDD2B009CD8FD /* NoteDictate.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		24F3CA62268BDD2C009CD8FD /* NoteDictate WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24F3CA86268BDD3B009CD8FD /* Build configuration list for PBXNativeTarget "NoteDictate WatchKit App" */;
+			buildPhases = (
+				24F3CA61268BDD2C009CD8FD /* Resources */,
+				24F3CA85268BDD3B009CD8FD /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24F3CA72268BDD39009CD8FD /* PBXTargetDependency */,
+			);
+			name = "NoteDictate WatchKit App";
+			productName = "NoteDictate WatchKit App";
+			productReference = 24F3CA63268BDD2C009CD8FD /* NoteDictate WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		24F3CA6E268BDD39009CD8FD /* NoteDictate WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24F3CA82268BDD3B009CD8FD /* Build configuration list for PBXNativeTarget "NoteDictate WatchKit Extension" */;
+			buildPhases = (
+				24F3CA6B268BDD39009CD8FD /* Sources */,
+				24F3CA6C268BDD39009CD8FD /* Frameworks */,
+				24F3CA6D268BDD39009CD8FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NoteDictate WatchKit Extension";
+			productName = "NoteDictate WatchKit Extension";
+			productReference = 24F3CA6F268BDD39009CD8FD /* NoteDictate WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24F3CA59268BDD2B009CD8FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					24F3CA5E268BDD2B009CD8FD = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					24F3CA62268BDD2C009CD8FD = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					24F3CA6E268BDD39009CD8FD = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 24F3CA5C268BDD2B009CD8FD /* Build configuration list for PBXProject "NoteDictate" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24F3CA58268BDD2B009CD8FD;
+			productRefGroup = 24F3CA60268BDD2B009CD8FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24F3CA5E268BDD2B009CD8FD /* NoteDictate */,
+				24F3CA62268BDD2C009CD8FD /* NoteDictate WatchKit App */,
+				24F3CA6E268BDD39009CD8FD /* NoteDictate WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24F3CA5D268BDD2B009CD8FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24F3CA61268BDD2C009CD8FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24F3CA69268BDD39009CD8FD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24F3CA6D268BDD39009CD8FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24F3CA7E268BDD3B009CD8FD /* Preview Assets.xcassets in Resources */,
+				24F3CA7B268BDD3B009CD8FD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24F3CA6B268BDD39009CD8FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24F3CA77268BDD3A009CD8FD /* NoteDictateApp.swift in Sources */,
+				24F3CA75268BDD3A009CD8FD /* ContentView.swift in Sources */,
+				24F3CA79268BDD3A009CD8FD /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24F3CA66268BDD2C009CD8FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24F3CA62268BDD2C009CD8FD /* NoteDictate WatchKit App */;
+			targetProxy = 24F3CA65268BDD2C009CD8FD /* PBXContainerItemProxy */;
+		};
+		24F3CA72268BDD39009CD8FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24F3CA6E268BDD39009CD8FD /* NoteDictate WatchKit Extension */;
+			targetProxy = 24F3CA71268BDD39009CD8FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		24F3CA80268BDD3B009CD8FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		24F3CA81268BDD3B009CD8FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24F3CA83268BDD3B009CD8FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"NoteDictate WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = L5MEY32333;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "NoteDictate WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.renatofraga.NoteDictate.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		24F3CA84268BDD3B009CD8FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"NoteDictate WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = L5MEY32333;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "NoteDictate WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.renatofraga.NoteDictate.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		24F3CA87268BDD3B009CD8FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5MEY32333;
+				IBSC_MODULE = NoteDictate_WatchKit_Extension;
+				INFOPLIST_FILE = "NoteDictate WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.renatofraga.NoteDictate.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		24F3CA88268BDD3B009CD8FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5MEY32333;
+				IBSC_MODULE = NoteDictate_WatchKit_Extension;
+				INFOPLIST_FILE = "NoteDictate WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.renatofraga.NoteDictate.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		24F3CA8B268BDD3B009CD8FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L5MEY32333;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.renatofraga.NoteDictate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		24F3CA8C268BDD3B009CD8FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L5MEY32333;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.renatofraga.NoteDictate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24F3CA5C268BDD2B009CD8FD /* Build configuration list for PBXProject "NoteDictate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24F3CA80268BDD3B009CD8FD /* Debug */,
+				24F3CA81268BDD3B009CD8FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24F3CA82268BDD3B009CD8FD /* Build configuration list for PBXNativeTarget "NoteDictate WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24F3CA83268BDD3B009CD8FD /* Debug */,
+				24F3CA84268BDD3B009CD8FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24F3CA86268BDD3B009CD8FD /* Build configuration list for PBXNativeTarget "NoteDictate WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24F3CA87268BDD3B009CD8FD /* Debug */,
+				24F3CA88268BDD3B009CD8FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24F3CA8A268BDD3B009CD8FD /* Build configuration list for PBXNativeTarget "NoteDictate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24F3CA8B268BDD3B009CD8FD /* Debug */,
+				24F3CA8C268BDD3B009CD8FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24F3CA59268BDD2B009CD8FD /* Project object */;
+}
