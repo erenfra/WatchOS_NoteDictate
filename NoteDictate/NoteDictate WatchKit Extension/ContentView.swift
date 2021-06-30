@@ -8,9 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var notes = [Note]()
+    @State private var text = ""
+    
     var body: some View {
-        Text("Hello, World!")
-            .padding()
+        VStack{
+            TextField("Add new note", text: $text)
+            Button("Add Note") {
+                let note = Note(id: UUID(), text: "Example")
+                notes.append(note)
+            }.foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+            List(0..<notes.count, id: \.self) {i in
+                Text(notes[i].text)
+            }
+        }
     }
 }
 

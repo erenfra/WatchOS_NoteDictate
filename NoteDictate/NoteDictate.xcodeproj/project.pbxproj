@@ -15,6 +15,7 @@
 		24F3CA79268BDD3A009CD8FD /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F3CA78268BDD3A009CD8FD /* ComplicationController.swift */; };
 		24F3CA7B268BDD3B009CD8FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24F3CA7A268BDD3B009CD8FD /* Assets.xcassets */; };
 		24F3CA7E268BDD3B009CD8FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24F3CA7D268BDD3B009CD8FD /* Preview Assets.xcassets */; };
+		24F3CA8E268C1473009CD8FD /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F3CA8D268C1473009CD8FD /* Note.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		24F3CA7A268BDD3B009CD8FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24F3CA7D268BDD3B009CD8FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		24F3CA7F268BDD3B009CD8FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24F3CA8D268C1473009CD8FD /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				24F3CA7A268BDD3B009CD8FD /* Assets.xcassets */,
 				24F3CA7F268BDD3B009CD8FD /* Info.plist */,
 				24F3CA7C268BDD3B009CD8FD /* Preview Content */,
+				24F3CA8D268C1473009CD8FD /* Note.swift */,
 			);
 			path = "NoteDictate WatchKit Extension";
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				24F3CA77268BDD3A009CD8FD /* NoteDictateApp.swift in Sources */,
 				24F3CA75268BDD3A009CD8FD /* ContentView.swift in Sources */,
 				24F3CA79268BDD3A009CD8FD /* ComplicationController.swift in Sources */,
+				24F3CA8E268C1473009CD8FD /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
