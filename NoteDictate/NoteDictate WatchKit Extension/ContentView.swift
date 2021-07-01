@@ -14,16 +14,41 @@ struct ContentView: View {
     
     var body: some View {
         VStack{
-            TextField("Add new note", text: $text)
-            Button("Add Note") {
-                let note = Note(id: UUID(), text: "Example")
-                notes.append(note)
-            }.foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
-            List(0..<notes.count, id: \.self) {i in
-                Text(notes[i].text)
+            HStack{
+                TextField("Add new note", text: $text)
+                Button {
+                    guard text.isEmpty == false else {return}
+                    let note = Note(id: UUID(), text: text)
+                    notes.append(note)
+                    text = ""
+                } label: {
+                    Image(systemName: "plus")
+                        .padding()
+                }.fixedSize()
+                .buttonStyle(BorderedButtonStyle(tint: .blue))
             }
+            List{
+                ForEach(0..<notes.count, id: \.self) { i in
+                    NavigationLink(destination: DetailView(index: i, note: notes[i], counter: notes.count)){
+                        Text(notes[i].text)
+                            .lineLimit(1)
+                    }
+                }.onDelete(perform: delete)
+            }
+//            Button ("Credit") {
+//                NavigationLink("Work Folder", destination: CreditView())
+//
+//            }
+            
+        }.navigationTitle("Note Dictate")
+    }
+    
+    func delete(offsets: IndexSet) {
+        withAnimation {
+            notes.remove(atOffsets: offsets)
         }
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
