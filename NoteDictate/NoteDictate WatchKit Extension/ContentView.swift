@@ -11,6 +11,7 @@ struct ContentView: View {
     
     @State private var notes = [Note]()
     @State private var text = ""
+    @AppStorage("lineCount") var lineCount = 1
     
     var body: some View {
         VStack{
@@ -21,6 +22,7 @@ struct ContentView: View {
                     let note = Note(id: UUID(), text: text)
                     notes.append(note)
                     text = ""
+                    save()
                 } label: {
                     Image(systemName: "plus")
                         .padding()
@@ -31,9 +33,16 @@ struct ContentView: View {
                 ForEach(0..<notes.count, id: \.self) { i in
                     NavigationLink(destination: DetailView(index: i, note: notes[i], counter: notes.count)){
                         Text(notes[i].text)
-                            .lineLimit(1)
+                            .lineLimit(lineCount)
                     }
                 }.onDelete(perform: delete)
+                Button("Lines: \(lineCount)") {
+                    lineCount += 1
+                    
+                    if lineCount ==  4 {
+                        lineCount = 1
+                    }
+                }.buttonStyle(BorderedButtonStyle(tint: .blue))
             }
 //            Button ("Credit") {
 //                NavigationLink("Work Folder", destination: CreditView())
@@ -41,13 +50,44 @@ struct ContentView: View {
 //            }
             
         }.navigationTitle("Note Dictate")
+        .onAppear(perform: load)
     }
     
     func delete(offsets: IndexSet) {
         withAnimation {
             notes.remove(atOffsets: offsets)
+            save()
         }
     }
+    
+    func getDocumentDirectory() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        return paths[0]
+    }
+    
+    func save() {
+        
+        do {
+            let data = try JSONEncoder().encode(notes)
+            let url = getDocumentDirectory().appendingPathComponent("notes")
+            try data.write(to: url)
+        } catch {
+            print("Save Failed")
+        }
+    }
+    
+    func load() {
+        DispatchQueue.main.async {
+            do {
+                let url = getDocumentDirectory().appendingPathComponent("notes")
+                let data = try Data(contentsOf: url)
+                notes = try JSONDecoder().decode([Note].self, from: data)
+            } catch {
+                // do nothing
+            }
+        }
+    }
+    
     
 }
 
